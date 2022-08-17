@@ -1,0 +1,97 @@
+import java.lang.Math;
+import java.util.Random;
+
+class Main {  
+  public static void main(String args[]) { 
+    
+    System.out.println("Hello, world!"); 
+    double []daily=new double[]{0,1,1,4,6,10,9,20,31,29,41,21,19,16,3,1,1};
+    int max_daily_deaths=0;
+    int daily_deaths=0;
+    int total_cases=0;
+    int cummulative_deaths=0;
+    // for(int i=0;i<20;i++){
+    //     int daily_cases=(int)Math.floor(daily[i]);
+    //     System.out.println(i+":"+daily[i]+"--->"+daily_cases);
+    // }
+    int daily_cases=0;
+    boolean val = new Random().nextInt(300)==0;
+    for(int i=0;i<17;i++){
+      daily_cases=(int)Math.ceil(daily[i]);
+      total_cases=total_cases+daily_cases;
+      daily_deaths=0;
+       for(int j=0;j<daily_cases;j++){
+           Random rn = new Random();
+           double d = rn.nextDouble();     // random value in range 0.0 - 1.0
+           if(d<=0.03){
+              daily_deaths++;
+              cummulative_deaths++;
+          }
+       }
+       System.out.println("day "+i+" with " +daily_cases+" cases, had "+daily_deaths);
+       if(daily_deaths>max_daily_deaths){max_daily_deaths=daily_deaths;}
+    }
+    System.out.println("max_daily_deaths= "+max_daily_deaths);
+    System.out.println("cummulative_deaths= "+cummulative_deaths+", on " +total_cases+" total_cases");
+  } 
+}
+
+
+
+-----------------
+
+
+import java.lang.Math;
+import java.util.Random;
+
+class Main {  
+  public static void main(String args[]) { 
+    
+    System.out.println("Hello, world!"); 
+    
+	double []daily=new double[]{1,1,0,1,5,4,8,8,10,13,14,12,20,21,10,11,5,2,1,1};
+    
+	int max_daily_deaths=0;
+    int daily_deaths=0;
+    int total_cases=0;
+    int cummulative_deaths=0;
+    int daily_cases=0;
+    int total_max_daily_cases=0;
+	int total_max_cummulative=0;
+	double max_daily=0;
+	double max_cummulative=0;
+	
+	int size=20;
+	
+    for(int exp=0;exp<10;exp++){
+        max_daily_deaths=0;
+		daily_deaths=0;
+		total_cases=0;
+		cummulative_deaths=0;
+		daily_cases=0;
+		//boolean val = new Random().nextInt(300)==0;
+		for(int i=0;i<size;i++){
+		    daily_cases=(int)Math.ceil(daily[i]);
+		    total_cases=total_cases+daily_cases;
+		    daily_deaths=0;
+		    for(int j=0;j<daily_cases;j++){
+			    Random rn = new Random();
+			    double d = rn.nextDouble();     // random value in range 0.0 - 1.0
+			    if(d<=0.03){
+				   daily_deaths++;
+				   cummulative_deaths++;
+			    }
+		    }
+		    //System.out.println("day "+i+" with " +daily_cases+" cases, had "+daily_deaths);
+		    if(daily_deaths>max_daily_deaths){max_daily_deaths=daily_deaths;}
+		}
+		total_max_daily_cases=total_max_daily_cases+max_daily_deaths;
+		total_max_cummulative=total_max_cummulative+cummulative_deaths;
+    }
+    max_daily=(double)((double)total_max_daily_cases/(double)10);
+	max_cummulative=(double)((double)total_max_cummulative/(double)10);
+	
+    System.out.println("AVG max_daily_deaths= "+max_daily+"---"+total_max_daily_cases);
+    System.out.println("cummulative_deaths= "+max_cummulative+"---"+total_max_cummulative);//", on " +total_cases+" total_cases");
+  } 
+}
