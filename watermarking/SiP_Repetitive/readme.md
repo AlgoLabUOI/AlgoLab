@@ -3,7 +3,7 @@ In this work we present a novel watermarking scheme based on the repetitive appl
 
 ### Citation <br>
 @inproceedings{chroni2022repetitive,<br>
-  title={A Repetitive Watermarking Scheme for Digital Images based on Self-Inverting Permutations},<br>
+  <pre>&#9;</pre>title={A Repetitive Watermarking Scheme for Digital Images based on Self-Inverting Permutations},<br>
   author={Chroni, Maria and Nikolopoulos, Stavros D and Polenakis, Iosif and Vouronikos, Vasileios},<br>
   booktitle={2022 13th International Conference on Information, Intelligence, Systems \& Applications (IISA)},<br>
   pages={1--8},<br>
