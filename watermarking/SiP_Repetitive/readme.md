@@ -5,7 +5,7 @@ In this work we present a novel watermarking scheme based on the repetitive appl
 ![sneak pic](https://github.com/AlgoLabUOI/AlgoLab/blob/main/watermarking/SiP_Repetitive/pics/em.PNG?raw=False)
 
 ### Watermark Extract <br>
-![sneak pic](https://github.com/AlgoLabUOI/AlgoLab/blob/main/watermarking/SiP_Repetitive/pics/em.PNG?raw=False)
+![sneak pic](https://github.com/AlgoLabUOI/AlgoLab/blob/main/watermarking/SiP_Repetitive/pics/ex.PNG?raw=False)
 
 ### Citation <br>
 @inproceedings{chroni2022repetitive,<br>
