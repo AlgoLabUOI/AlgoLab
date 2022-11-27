@@ -4,6 +4,9 @@ In this work we present a novel watermarking scheme based on the repetitive appl
 ### Watermark Embed <br>
 ![sneak pic](https://github.com/AlgoLabUOI/AlgoLab/blob/main/watermarking/SiP_Repetitive/pics/em.PNG?raw=False)
 
+### Watermark Extract <br>
+![sneak pic](https://github.com/AlgoLabUOI/AlgoLab/blob/main/watermarking/SiP_Repetitive/pics/em.PNG?raw=False)
+
 ### Citation <br>
 @inproceedings{chroni2022repetitive,<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title={A Repetitive Watermarking Scheme for Digital Images based on Self-Inverting Permutations},<br>
