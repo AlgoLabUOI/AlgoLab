@@ -20,22 +20,16 @@ To execute the embed algorithm, you will need to provide the following three arg
 2. **PDF Path**  
    The file path to the PDF document you wish to process.
 
-3. **Output Path**  
-   The directory where the generated QR code will be saved.
+3. **QR Data Link/Path**  
+   The link/path for the generation of the QR
 
 ---
 
-### Running the embed Algorithm
+### Running the embed and extract Algorithm
 
 Here’s an example of how to run the algorithm after cloning the repository:
 
 ```bash
-python embed_QR.py <license_path> <pdf_path> <output_path>
-
----
-
-### Running the extract Algorithm
-
-```bash
+python embed_QR.py <license_path> <pdf_path> <link/path_for_qr_generation>
 python extract_QR.py <license_path>
 
