@@ -25,10 +25,17 @@ To execute the embed algorithm, you will need to provide the following three arg
 
 ---
 
-### Running the Algorithm
+### Running the embed Algorithm
 
 Here’s an example of how to run the algorithm after cloning the repository:
 
 ```bash
-python embed_algorithm.py <license_path> <pdf_path> <output_path>
+python embed_QR.py <license_path> <pdf_path> <output_path>
+
+---
+
+### Running the extract Algorithm
+
+```bash
+python extract_QR.py <license_path>
 
